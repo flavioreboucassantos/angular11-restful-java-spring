@@ -1,0 +1,23 @@
+npm --version
+npm install -g @angular/cli@latest
+npm install # download das dependencias
+npm install --save bootstrap@4.6.0 # instala no projeto a biblioteca externa bootstrap versão 4.6.0
+npm install --save jquery # instala no projeto a biblioteca externa jQuery
+npm install --save rxjs-compat # instala no projeto a biblioteca externa RxJS
+
+ng --version
+ng new ola-mundo
+cd ola-mundo
+
+ng serve # sobe a aplicação
+ng serve --aot # sobe a aplicação pre-compilada antes da execução, aumentando sua performance
+ng test # executa testes unitários
+ng e2e # executa testes de integração
+ng lint # verifica se o código criado está padronizado
+ng build --prod # gera uma distribuição/código pronto para produção
+
+ng g module calculadora # generates module calculadora
+ng g component calculadora/calculadora # generates component calculadora inside module calculadora
+ng g service calculadora/services/calculadora # generates service calculadora inside module calculadora, folder services
+ng g directive tarefas/shared/tarefa-concluida # generates directive tarefa-concluida inside module tarefas, folder shared
+ng g pipe conversor/pipes/data-br # generates pipe data-br inside module conversor, folder pipes
