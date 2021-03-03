@@ -1,0 +1,2 @@
+cd ponto-inteligente-api-curso-angular11
+mvnw spring-boot:run
