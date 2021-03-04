@@ -1,9 +1,10 @@
 npm --version
 npm install -g @angular/cli@latest
-npm install # download das dependencias
+npm install # download das dependências
 npm install --save bootstrap@4.6.0 # instala no projeto a biblioteca externa bootstrap versão 4.6.0
 npm install --save jquery # instala no projeto a biblioteca externa jQuery
 npm install --save rxjs-compat # instala no projeto a biblioteca externa RxJS
+npm install --save @angular/material @angular/cdk @angular/animations hammerjs @angular/flex-layout # instala no projeto um kit de dependências para o Angular Material
 
 ng --version
 ng new ola-mundo
@@ -16,8 +17,11 @@ ng e2e # executa testes de integração
 ng lint # verifica se o código criado está padronizado
 ng build --prod # gera uma distribuição/código pronto para produção
 
-ng g module calculadora # generates module calculadora
-ng g component calculadora/calculadora # generates component calculadora inside module calculadora
+ng g module autenticacao/login # generates module login inside folder autenticacao
+ng g component autenticacao/login/components/login # generates component login inside module login, folder components
+ng g class app-routing.module # generates class app-routing.module
+ng g class autenticacao/login/login-routing.module # generates class login-routing.module inside folder autenticacao/login
+
 ng g service calculadora/services/calculadora # generates service calculadora inside module calculadora, folder services
 ng g directive tarefas/shared/tarefa-concluida # generates directive tarefa-concluida inside module tarefas, folder shared
 ng g pipe conversor/pipes/data-br # generates pipe data-br inside module conversor, folder pipes
