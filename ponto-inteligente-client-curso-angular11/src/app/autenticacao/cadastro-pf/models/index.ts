@@ -1,0 +1,1 @@
+export * from './cadasto-pf.model';
