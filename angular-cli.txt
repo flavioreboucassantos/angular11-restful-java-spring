@@ -3,9 +3,9 @@ npm install -g @angular/cli@latest
 npm install # download das dependências
 npm install --save bootstrap@4.6.0 # instala no projeto a biblioteca externa bootstrap versão 4.6.0
 npm install --save jquery # instala no projeto a biblioteca externa jQuery
-npm install --save rxjs-compat # instala no projeto a biblioteca externa RxJS
+npm install --save rxjs-compat # instala no projeto a biblioteca RxJS
 npm install --save @angular/material @angular/cdk @angular/animations hammerjs @angular/flex-layout # instala no projeto um kit de dependências para o Angular Material
-npm install --save moment
+npm install --save moment # instala no projeto a biblioteca externa MomentJS
 
 ng --version
 ng new ola-mundo
@@ -27,5 +27,4 @@ ng g class autenticacao/login/login-routing.module # generates class login-routi
 ng g service autenticacao/login/services/login # generates service login inside folder autenticacao/login/services
 ng g service autenticacao/cadastro-pf/services/cadastrar-pf # generates service inside folder autenticacao/cadastro-pf/services
 ng g directive shared/directives/mascara # generates directive mascara inside module shared, folder shared/directives
-
-ng g pipe conversor/pipes/data-br # generates pipe data-br inside module conversor, folder pipes
+ng g pipe shared/pipes/tipo # generates pipe tipo inside module shared, folder shared/pipes

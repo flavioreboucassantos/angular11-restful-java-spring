@@ -25,16 +25,12 @@ import {
 import {
 	HttpUtilService,
 	LancamentoService,
-	//PtBrMatPaginatorIntl
+	PtBrMatPaginatorIntl
 } from '../shared';
 
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-	providers: [
-		HttpUtilService,
-		LancamentoService
-	],
 	declarations: [
 		ListagemComponent,
 		LancamentoComponent,
@@ -56,6 +52,11 @@ import { SharedModule } from '../shared/shared.module';
 		MatSortModule,
 		MatCardModule,
 		SharedModule
+	],
+	providers: [
+		HttpUtilService,
+		LancamentoService,
+		{ provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl }
 	]
 })
 export class FuncionarioModule { }

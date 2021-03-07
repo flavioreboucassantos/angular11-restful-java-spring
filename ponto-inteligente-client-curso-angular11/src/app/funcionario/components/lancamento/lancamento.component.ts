@@ -6,7 +6,7 @@ import {
 	Tipo,
 	LancamentoService,
 	Lancamento,
-	//HttpUtilService
+	HttpUtilService
 } from '../../../shared';
 
 import * as moment from 'moment';
@@ -28,8 +28,8 @@ export class LancamentoComponent implements OnInit {
 	constructor(
 		private snackBar: MatSnackBar,
 		private router: Router,
-		/*private httpUtil: HttpUtilService,
-		private lancamentoService: LancamentoService*/) { }
+		private httpUtil: HttpUtilService,
+		private lancamentoService: LancamentoService) { }
 
 	ngOnInit() {
 		this.dataAtual = moment().format('DD/MM/YYYY HH:mm:ss');
@@ -65,8 +65,7 @@ export class LancamentoComponent implements OnInit {
 	}
 
 	obterUltimoLancamento() {
-		this.ultimoTipoLancado = Tipo.INICIO_TRABALHO;
-		/*this.lancamentoService.buscarUltimoTipoLancado()
+		this.lancamentoService.buscarUltimoTipoLancado()
 			.subscribe(
 				data => {
 					this.ultimoTipoLancado = data.data ? data.data.tipo : '';
@@ -75,12 +74,11 @@ export class LancamentoComponent implements OnInit {
 					const msg: string = "Erro obtendo último lançamento.";
 					this.snackBar.open(msg, "Erro", { duration: 5000 });
 				}
-			);*/
+			);
 	}
 
 	cadastrar(tipo: Tipo) {
-		alert(`Tipo: ${tipo}, dataAtualEn: ${this.dataAtualEn}, geoLocation: ${this.geoLocation}`);
-		/*const lancamento: Lancamento = new Lancamento(
+		const lancamento: Lancamento = new Lancamento(
 			this.dataAtualEn,
 			tipo,
 			this.geoLocation,
@@ -101,7 +99,7 @@ export class LancamentoComponent implements OnInit {
 					}
 					this.snackBar.open(msg, "Erro", { duration: 5000 });
 				}
-			);*/
+			);
 	}
 
 	obterUrlMapa(): string {
