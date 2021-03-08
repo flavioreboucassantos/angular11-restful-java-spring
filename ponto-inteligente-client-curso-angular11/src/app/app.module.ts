@@ -19,6 +19,10 @@ import {
 	FuncionarioModule,
 	FuncionarioRoutingModule
 } from './funcionario';
+import {
+	AdminModule,
+	AdminRoutingModule
+} from './admin';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -43,6 +47,8 @@ import { AppComponent } from './app.component';
 		CadastroPfRoutingModule,
 		FuncionarioModule,
 		FuncionarioRoutingModule,
+		AdminModule,
+		AdminRoutingModule,
 
 		AppRoutingModule
 	],
