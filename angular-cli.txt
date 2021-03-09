@@ -7,6 +7,8 @@ npm install --save rxjs-compat # instala no projeto a biblioteca RxJS
 npm install --save @angular/material @angular/cdk @angular/animations hammerjs @angular/flex-layout # instala no projeto um kit de dependências para o Angular Material
 npm install --save moment # instala no projeto a biblioteca externa MomentJS
 
+npm start # sobe a aplicação com o comando ng serve do package.json -> scritps -> start
+
 ng --version
 ng new ola-mundo
 cd ola-mundo

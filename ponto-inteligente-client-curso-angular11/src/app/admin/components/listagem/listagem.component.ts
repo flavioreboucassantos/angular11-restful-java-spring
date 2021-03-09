@@ -131,12 +131,12 @@ export class ListagemComponent implements OnInit {
 	}
 
 	removerDialog(lancamentoId: string) {
-		/*const dialog = this.dialog.open(ConfirmarDialog, {});
+		const dialog = this.dialog.open(ConfirmarDialog, {});
 		dialog.afterClosed().subscribe(remover => {
 			if (remover) {
 				this.remover(lancamentoId);
 			}
-		});*/
+		});
 	}
 
 	remover(lancamentoId: string) {
@@ -158,10 +158,10 @@ export class ListagemComponent implements OnInit {
 	}
 
 }
-/*
+
 @Component({
-  selector: 'confirmar-dialog',
-  template: `
+	selector: 'confirmar-dialog',
+	template: `
 	<h1 mat-dialog-title>Deseja realmente remover o lançamento?</h1>
 	<div mat-dialog-actions>
 	  <button mat-button [mat-dialog-close]="false" tabindex="-1">
@@ -174,5 +174,5 @@ export class ListagemComponent implements OnInit {
   `,
 })
 export class ConfirmarDialog {
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
-}*/
+	constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
+}

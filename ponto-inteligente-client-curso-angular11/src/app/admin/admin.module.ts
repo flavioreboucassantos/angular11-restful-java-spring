@@ -35,9 +35,11 @@ import {
 	ListagemComponent,
 	CadastroComponent,
 	AtualizacaoComponent,
-	AdminComponent
+	AdminComponent,
+	ConfirmarDialog
 } from './components';
 
+import { AdminGuard } from './services';
 
 
 @NgModule({
@@ -45,7 +47,8 @@ import {
 		ListagemComponent,
 		CadastroComponent,
 		AtualizacaoComponent,
-		AdminComponent
+		AdminComponent,
+		ConfirmarDialog
 	],
 	imports: [
 		CommonModule,
@@ -75,7 +78,8 @@ import {
 		MatPaginatorIntl,
 		FuncionarioService,
 		{ provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
-		{ provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl }
+		{ provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl },
+		AdminGuard
 	]
 })
 export class AdminModule { }
