@@ -1,11 +1,11 @@
 npm --version
 npm install -g @angular/cli@latest
 npm install # download das dependências
-npm install bootstrap@4.6.0 # instala no projeto a biblioteca externa bootstrap versão 4.6.0
-npm install jquery # instala no projeto a biblioteca externa jQuery
-npm install rxjs-compat # instala no projeto a biblioteca RxJS
-npm install @angular/material @angular/cdk @angular/animations hammerjs @angular/flex-layout # instala no projeto um kit de dependências para o Angular Material
-npm install moment # instala no projeto a biblioteca externa MomentJS
+npm install --save bootstrap@4.6.0 # instala no projeto a biblioteca externa bootstrap versão 4.6.0
+npm install --save jquery # instala no projeto a biblioteca externa jQuery
+npm install --save rxjs-compat # instala no projeto a biblioteca RxJS
+npm install --save @angular/material @angular/cdk @angular/animations hammerjs @angular/flex-layout # instala no projeto um kit de dependências para o Angular Material
+npm install --save moment # instala no projeto a biblioteca externa MomentJS
 
 npm start # sobe a aplicação com o comando ng serve do package.json -> scritps -> start
 
